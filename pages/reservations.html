@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,50 +11,89 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+
 <body>
 
     <!-- Accessibility: Allows keyboard users to skip navigation -->
-<a class="skip-link" href="#main-content">Skip to main content</a>
-    <header></header>
-    <main></main>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Footer -->
-    <footer id="site-footer" class="site-footer" role="contentinfo">
+    <div class="page-wrapper">
 
-        <!-- Social links -->
-        <section id="social" class="footer-section">
-            <h2 class="visually-hidden">Social Media</h2>
-            <ul id="social-networks" class="footer-list">
-                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </section>
+        <!-- same header as in index.html -->
+        <header id="site-header" class="header-container" role="banner">
 
-        <!-- Footer navigation -->
-        <nav class="footer-section" aria-label="Footer links">
-            <ul id="footer-items" class="footer-list">
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#accessibility">Accessibility</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms & Conditions</a></li>
-            </ul>
-        </nav>
+            <!-- logo + brand -->
+            <a href="../index.html" class="logo-container" aria-label="Nala Restaurant Home">
+                <img src="../assets/images/logo.png" id="logo-img" alt="Nala Restaurant logo" />
+                <p class="logo-text">Nala Restaurant</p>
+            </a>
 
-        <!-- Copyright -->
-        <p class="footer-copy">
-            &copy; <span id="current-year">2026</span> Nala Restaurant. All rights reserved.
-        </p>
+            <!-- Navigation -->
+            <nav id="main-nav" class="main-nav" aria-label="Main navigation">
 
-    </footer>
+                <!-- Mobile menu toggle -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu-items"
+                    aria-label="Toggle navigation menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="visually-hidden">Open Menu</span>
+                </button>
+
+                <!-- Navigation links -->
+                <ul id="nav-menu-items" class="nav-container">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="reservations.html" aria-current="page">Reservations</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <main></main>
+
+        <!-- Footer -->
+        <footer id="site-footer" class="site-footer" role="contentinfo">
+
+            <!-- Social links -->
+            <section id="social" class="footer-section">
+                <h2 class="visually-hidden">Social Media</h2>
+                <ul id="social-networks" class="footer-list">
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </section>
+
+            <!-- Footer navigation -->
+            <nav class="footer-section" aria-label="Footer links">
+                <ul id="footer-items" class="footer-list">
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                </ul>
+            </nav>
+
+            <!-- Copyright -->
+            <p class="footer-copy">
+                &copy; <span id="current-year">2026</span> Nala Restaurant. All rights reserved.
+            </p>
+
+        </footer>
+    </div>
 
     <!-- Font Awesome + main.js -->
-    <script
-      src="https://kit.fontawesome.com/32ee7b6f29.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/32ee7b6f29.js" crossorigin="anonymous"></script>
     <script src="../assets/javascript/main.js"></script>
-    
+
 </body>
+
 </html>
