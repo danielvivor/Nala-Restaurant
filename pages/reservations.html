@@ -56,6 +56,103 @@
 
             <!-- Hidden for accessibility -->
         <h1 class="visually-hidden">Nala Restaurant Reservations</h1>
+
+        <!-- Booking engine + Manage existing booking -->
+        <section class="dashboard-grid">
+
+            <!-- Booking engine -->
+            <article class="dashboard-column">
+
+                <div class="section-header">
+                    <h2>Book Your Tables</h2>
+                    <p>Fill out the details for your first table. Use the button below to add more for larger groups.</p>
+                </div>
+
+                <!-- Booking form -->
+                <form id="multi-reservation-form" method="POST" action="#">
+
+                    <!-- Container for dynamically added tables -->
+                    <div id="tables-container">
+
+                        <!-- Default table entry -->
+                        <div class="table-entry-card">
+
+                            <div class="entry-header">
+                                <span class="table-number">Table #1</span>
+                                <!-- First table cannot be removed -->
+                            </div>
+
+                            <div class="form-row-grid">
+
+                                <div class="form-field">
+                                    <label for="table-date-1">Date</label>
+                                    <input type="date" id="table-date-1" name="table-date[]" required />
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="table-time-1">Time</label>
+                                    <input type="time" id="table-time-1" name="table-time[]" required />
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="table-guests-1">Guests</label>
+                                    <input type="number"
+                                           id="table-guests-1"
+                                           name="table-guests[]"
+                                           min="1"
+                                           max="12"
+                                           value="2"
+                                           required />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ACTION BUTTONS
+                         Add table + submit booking -->
+                    <div class="form-actions">
+                        <button type="button" id="add-table-btn" class="btn btn-outline">
+                            + Add Another Table
+                        </button>
+
+                        <button type="submit" class="btn btn-primary full-width">
+                            Confirm All Bookings
+                        </button>
+                    </div>
+
+                </form>
+            </article>
+
+            <!-- MANAGE EXISTING BOOKING -->
+            <article class="dashboard-column management-sidebar">
+
+                <div class="section-header">
+                    <h2>Manage My Booking</h2>
+                </div>
+
+                <!-- Search form -->
+                <form id="view-reservation-form" class="form-block">
+                    <div class="form-field">
+                        <label for="search-email">Email Used for Booking</label>
+                        <input type="email" id="search-email" placeholder="chef@world.com" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-outline full-width">
+                        Find My Table
+                    </button>
+                </form>
+
+                <!-- Search results -->
+                <div id="reservation-results" class="result-card" style="display: none">
+                    <div class="status-badge">Confirmed</div>
+                    <p><strong>Status:</strong> Active</p>
+                    <button class="btn-text-only">Cancel or Change</button>
+                </div>
+
+            </article>
+
+        </section>
         </main>
 
         <!-- Footer -->
