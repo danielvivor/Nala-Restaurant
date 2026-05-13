@@ -71,66 +71,145 @@
 </head>
 
 <body>
-
     <!-- Accessibility: Skip link for screen readers -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <div class="page-wrapper">
-
         <!-- Header -->
-    <header>
+        <header>
+            <a href="index.html" class="logo-container" aria-label="Nala Restaurant Home">
+                <img src="assets/images/logo.png" id="logo-img" alt="Nala Restaurant logo" />
+                <p class="logo-text">Nala Restaurant</p>
+            </a>
 
-        <a href="index.html" class="logo-container" aria-label="Nala Restaurant Home">
-            <img src="assets/images/logo.png" id="logo-img" alt="Nala Restaurant logo" />
-            <p class="logo-text">Nala Restaurant</p>
-        </a>
-
-        <!-- Navigation -->
-        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-
-            <!-- Mobile menu toggle button -->
-            <button class="nav-toggle"
-                    aria-expanded="false"
-                    aria-controls="nav-menu-items"
+            <!-- Navigation -->
+            <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+                <!-- Mobile menu toggle button -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu-items"
                     aria-label="Toggle navigation menu">
-                <span class="nav-toggle-bar"></span>
-                <span class="nav-toggle-bar"></span>
-                <span class="nav-toggle-bar"></span>
-                <span class="visually-hidden">Open Menu</span>
-            </button>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="visually-hidden">Open Menu</span>
+                </button>
 
-            <!-- Navigation links -->
-            <ul id="nav-menu-items" class="nav-container">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="pages/reservations.html">Reservations</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+                <!-- Navigation links -->
+                <ul id="nav-menu-items" class="nav-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="pages/reservations.html">Reservations</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Mian Section -->
-    <main id="main-content" tabindex="-1">
+        <!-- Main Section -->
+        <main id="main-content" tabindex="-1">
+            <!-- hero section -->
+            <section id="hero" class="hero">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Taste the World</h1>
+                    <p class="hero-subtitle">
+                        Fine intercontinental dining in the heart of Munich.
+                    </p>
 
-        <!-- hero section -->
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1 id="hero-heading">Taste the World</h1>
-                <p class="hero-subtitle">Fine intercontinental dining in the heart of Munich.</p>
-
-                <div class="hero-actions">
-                    <a href="pages/reservations.html" class="btn btn-primary">Reserve a Table</a>
-                    <a href="pages/menu.html" class="btn btn-outline">All Menus</a>
+                    <div class="hero-actions">
+                        <a href="pages/reservations.html" class="btn btn-primary">Reserve a Table</a>
+                        <a href="pages/menu.html" class="btn btn-outline">All Menus</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <!-- Footer -->
-    <footer></footer>
+            <!-- menu -->
+            <section id="menu" class="menu-section" aria-labelledby="menu-heading">
+                <header class="section-header">
+                    <h2 id="menu-heading">Our Intercontinental Menu</h2>
+                </header>
 
+                <div class="menu-grid">
+                    <!-- starters -->
+                    <article class="menu-category" id="starters">
+                        <h3>Starters</h3>
+                        <ul class="menu-list">
+                            <li>Global Mezze Platter</li>
+                            <li>Spiced Coconut Soup</li>
+                            <li>Herb-Crusted Prawns</li>
+                        </ul>
+
+                        <!-- Auto-scrolling image track -->
+                        <div class="menu-scroll">
+                            <div class="menu-scroll-track">
+                                <img src="assets/images/starters/mezze_platter.jpg" alt="Global Mezze Platter" />
+                                <img src="assets/images/starters/spiced_coconut.jpg" alt="Spiced Coconut Soup" />
+                                <img src="assets/images/starters/herb_crusted_prawns.jpg" alt="Herb-Crusted Prawns" />
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- main courses -->
+                    <article class="menu-category" id="mains">
+                        <h3>Main Courses</h3>
+                        <ul class="menu-list">
+                            <li>Moroccan Lamb Tagine</li>
+                            <li>Thai Green Curry</li>
+                            <li>Italian Truffle Pasta</li>
+                        </ul>
+
+                        <div class="menu-scroll">
+                            <div class="menu-scroll-track">
+                                <img src="assets/images/main_courses/moroccan_lamb.jpg" alt="Moroccan Lamb Tagine" />
+                                <img src="assets/images/main_courses/thai_green_curry.jpg" alt="Thai Green Curry" />
+                                <img src="assets/images/main_courses/italian_truffle_pasta.jpg"
+                                    alt="Italian Truffle Pasta" />
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- desserts -->
+                    <article class="menu-category" id="desserts">
+                        <h3>Desserts</h3>
+                        <ul class="menu-list">
+                            <li>French Crème Brûlée</li>
+                            <li>Japanese Matcha Cheesecake</li>
+                            <li>Belgian Chocolate Mousse</li>
+                        </ul>
+
+                        <div class="menu-scroll">
+                            <div class="menu-scroll-track">
+                                <img src="assets/images/desserts/french_creme_brulee.jpg" alt="French Crème Brûlée" />
+                                <img src="assets/images/desserts/japanese_matcha.jpg"
+                                    alt="Japanese Matcha Cheesecake" />
+                                <img src="assets/images/desserts/belgian_chocolate.jpg"
+                                    alt="Belgian Chocolate Mousse" />
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- wines -->
+                    <article class="menu-category" id="wines">
+                        <h3>Wines</h3>
+                        <ul class="menu-list">
+                            <li>Chardonnay</li>
+                            <li>Sauvignon Blanc</li>
+                            <li>Merlot</li>
+                        </ul>
+
+                        <div class="menu-scroll">
+                            <div class="menu-scroll-track">
+                                <img src="assets/images/wines/chardonnay.jpg" alt="Chardonnay" />
+                                <img src="assets/images/wines/sauv-blanc.jpg" alt="Sauvignon Blanc" />
+                                <img src="assets/images/wines/merlot.png" alt="Merlot" />
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer></footer>
     </div>
 
     <!-- Font Awesome + main.js -->
