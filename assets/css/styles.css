@@ -144,3 +144,17 @@ a {
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  gap: var(--space-lg);
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
