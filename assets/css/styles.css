@@ -414,6 +414,27 @@ a {
   margin-bottom: var(--space-xs);
 }
 
+/* Sections & :Layout */
+.section,
+.menu-section,
+.info-section {
+  padding: var(--space-2xl) var(--space-lg);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.section h2,
+.menu-section h2,
+.info-section h2 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
 
 
 
