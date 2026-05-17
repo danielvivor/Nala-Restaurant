@@ -68,3 +68,13 @@ body {
     color: var(--color-text-main);
     overflow: hidden;
 }
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
