@@ -112,3 +112,28 @@ a {
 .page-wrapper {
   min-height: 100vh;
 }
+
+/* Header and Navigation */
+.header-container {
+  background-color: var(--color-black);
+  color: var(--color-text-on-dark);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+#logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
