@@ -137,3 +137,10 @@ a {
   height: 40px;
   object-fit: contain;
 }
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
