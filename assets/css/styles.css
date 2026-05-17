@@ -389,6 +389,11 @@ a {
   margin-top: var(--space-lg);
 }
 
+.management-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
 
 
 
