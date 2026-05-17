@@ -108,3 +108,7 @@ a {
 .skip-link:focus {
   top: 1rem; 
 }
+
+.page-wrapper {
+  min-height: 100vh;
+}
