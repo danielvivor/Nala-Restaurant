@@ -360,6 +360,22 @@ a {
   padding-bottom: var(--space-2xs);
 }
 
+.table-number {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: var(--fs-md);
+  color: var(--color-gold-dark);
+}
+
+.remove-table {
+  background: none;
+  border: none;
+  font-size: 2.8rem;
+  color: #d9534f;
+  cursor: pointer;
+  line-height: 1;
+}
+
 
 
 
