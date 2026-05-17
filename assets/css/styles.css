@@ -179,3 +179,21 @@ a {
 .nav-container a:focus-visible::after {
   width: 100%;
 }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: var(--space-md);
+  padding: 0.8rem;
+}
+
+.nav-toggle-bar {
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-text-on-dark);
+  transition: 0.3s;
+}
