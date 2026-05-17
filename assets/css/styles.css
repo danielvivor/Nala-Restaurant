@@ -238,7 +238,7 @@ a {
 }
 
 /* Buttons */
-#add-table-btn {
+#add-table-btn, #find-table {
     color: #000000;
 }
 
@@ -326,6 +326,21 @@ a {
   outline: none;
   border-color: var(--color-gold);
 }
+
+/* Reservations Dashboard */
+.dashboard-wrapper {
+  padding: var(--space-2xl) var(--space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
 
 
 
