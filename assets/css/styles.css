@@ -163,3 +163,19 @@ a {
   color: var(--color-text-on-dark);
   position: relative;
 }
+
+.nav-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-gold);
+  transition: width 0.2s ease;
+}
+
+.nav-container a:hover::after,
+.nav-container a:focus-visible::after {
+  width: 100%;
+}
