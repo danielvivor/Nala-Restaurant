@@ -403,6 +403,17 @@ a {
   box-shadow: var(--shadow-soft);
 }
 
+.status-badge {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+
 
 
 
