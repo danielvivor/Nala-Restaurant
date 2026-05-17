@@ -435,6 +435,83 @@ a {
   letter-spacing: 0.12rem;
 }
 
+/* Menu & Auto-Scroll */
+.section,
+.menu-section,
+.info-section {
+  padding: var(--space-2xl) var(--space-lg);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.section h2,
+.menu-section h2,
+.info-section h2 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+/* =========================
+   Menu & Auto-Scroll
+   ========================= */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-xl);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.menu-category h3 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-gold);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.menu-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.menu-scroll {
+  margin-top: var(--space-md);
+  width: 100%;
+  /* CRITICAL: Allows JS to manipulate scrollLeft */
+  overflow-x: auto; 
+  white-space: nowrap;
+  /* Hides scrollbar for a cleaner look while auto-scrolling */
+  scrollbar-width: none; 
+}
+
+.menu-scroll::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Chrome/Safari */
+}
+
+.menu-scroll-track {
+  display: flex;
+  gap: var(--space-md);
+  /* CRITICAL: Prevents images from shrinking to fit, forcing a overflow */
+  width: max-content; 
+}
+
+.menu-scroll-track img {
+  height: 160px;
+  width: 220px; 
+  border-radius: var(--radius-md);
+  flex-shrink: 0; /* Ensures images keep their 220px width */
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+}
+
 
 
 
