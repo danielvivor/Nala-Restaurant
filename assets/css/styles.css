@@ -158,3 +158,8 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.12rem;
 }
+
+.nav-container a {
+  color: var(--color-text-on-dark);
+  position: relative;
+}
